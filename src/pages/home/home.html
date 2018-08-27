@@ -1,0 +1,16 @@
+<ion-header>
+</ion-header>
+
+<ion-content class="six-tabs">
+    <ion-col width=400>  
+  <ion-card *ngFor="let item of items" (click) = "itemClick(item.actionURL)">
+    <img [src]="item.imageURL"/>
+    <ion-card-content>
+      <ion-card-title>
+        {{item.id + "."}}
+        {{item.text}}
+        </ion-card-title>
+    </ion-card-content>
+  </ion-card>
+    </ion-col>
+</ion-content>
